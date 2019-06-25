@@ -20,6 +20,11 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+% Fix the bug: https://tex.stackexchange.com/a/453223/104838
+\usepackage{fontspec}
+% Add Chinese support
+\usepackage{xeCJK}
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -87,7 +92,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Byungjin Park~~~·~~~Résumé}
+  {Byungjin Park~~~·~~~Résumé甘}
   {\thepage}
 
 
